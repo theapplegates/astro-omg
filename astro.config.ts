@@ -9,6 +9,7 @@ import rehypeExternalLinks from "rehype-external-links";
 import remarkUnwrapImages from "remark-unwrap-images";
 import { expressiveCodeOptions } from "./src/site.config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
+import * as cheerio from 'cheerio';
 
 import netlify from "@astrojs/netlify";
 
