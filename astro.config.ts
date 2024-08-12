@@ -15,23 +15,34 @@ import netlify from "@astrojs/netlify";
 // https://astro.build/config
 export default defineConfig({
   image: {
-    domains: ["webmention.io"]
+    domains: ["webmention.io"],
   },
-  integrations: [expressiveCode(expressiveCodeOptions), icon(), tailwind({
-    applyBaseStyles: false,
-    nesting: true
-  }), sitemap(), mdx()],
+  integrations: [
+    expressiveCode(expressiveCodeOptions),
+    icon(),
+    tailwind({
+      applyBaseStyles: false,
+      nesting: true,
+    }),
+    sitemap(),
+    mdx(),
+  ],
   markdown: {
-    rehypePlugins: [[rehypeExternalLinks, {
-      rel: ["nofollow, noopener, noreferrer"],
-      target: "_blank"
-    }]],
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          rel: ["nofollow", "noopener", "noreferrer"],
+          target: "_blank",
+        },
+      ],
+    ],
     remarkPlugins: [remarkUnwrapImages, remarkReadingTime],
     remarkRehype: {
       footnoteLabelProperties: {
-        className: [""]
-      }
-    }
+        className: [""],
+      },
+    },
   },
   // https://docs.astro.build/en/guides/prefetch/
   prefetch: true,
@@ -39,32 +50,33 @@ export default defineConfig({
   site: "https://cactus.paulapplegate.com/",
   vite: {
     optimizeDeps: {
-      exclude: ["@resvg/resvg-js"]
+      exclude: ["@resvg/resvg-js"],
     },
-    plugins: [rawFonts([".ttf", ".woff"])]
+    plugins: [rawFonts([".ttf", ".woff"])],
   },
   output: "server",
   adapter: netlify({
     edgeMiddleware: true,
     imageCDN: true,
-    domains: ['res.cloudinary.com'],
+    domains: ["res.cloudinary.com"],
     cacheOnDemandPages: true,
-  }
+  }),
 });
+
 function rawFonts(ext: string[]) {
   return {
     name: "vite-plugin-raw-fonts",
     // @ts-expect-error:next-line
     transform(_, id) {
       // eslint-disable-next-line
-      if (ext.some(e => id.endsWith(e))) {
+      if (ext.some((e) => id.endsWith(e))) {
         // eslint-disable-next-line
         const buffer = fs.readFileSync(id);
         return {
           code: `export default ${JSON.stringify(buffer)}`,
-          map: null
+          map: null,
         };
       }
-    }
+    },
   };
 }
