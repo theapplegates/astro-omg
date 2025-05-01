@@ -130,8 +130,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0
       remark-unwrap-images:
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^4.0.1
+        version: 4.0.1
       tailwindcss:
         specifier: ^3.4.6
         version: 3.4.6
@@ -664,6 +664,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -671,6 +672,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    deprecated: Use @eslint/object-schema instead
 
   '@iconify-json/mdi@1.1.67':
     resolution: {integrity: sha512-00nllHES8hyACwIfgySlQgAE6MKgpr2wsKfpifMiZWZ9aXC5l4Jb0lR3lJSWwXgOW6kzAOdzC3T+2VOfBBZ13A==}
@@ -1158,14 +1160,17 @@ packages:
   '@types/tar@6.1.11':
     resolution: {integrity: sha512-ThA1WD8aDdVU4VLuyq5NEqriwXErF5gEIJeyT6gHBWU7JtSmW2a5qjNv3/vR82O20mW+1vhmeZJfBQPT3HCugg==}
 
-  '@types/unist@2.0.10':
-    resolution: {integrity: sha512-IfYcSBWE3hLpBg8+X2SEa8LVkJdJEkT2Ese2aaLs3ptGdVtABxndrMaxuFlQ1qdFf9Q5rDvDpxI3WwgvKFAsQA==}
+  '@types/unist@2.0.11':
+    resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
 
   '@types/unist@3.0.0':
     resolution: {integrity: sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==}
 
   '@types/unist@3.0.2':
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
+
+  '@types/unist@3.0.3':
+    resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
 
   '@types/yauzl@2.10.3':
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
@@ -2097,6 +2102,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -2498,6 +2504,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -3748,8 +3755,8 @@ packages:
   remark-stringify@11.0.0:
     resolution: {integrity: sha512-1OSmLd3awB/t8qdoEOMazZkNsfVTeY4fTsgzcQFdXNq8ToTN4ZGwrMnlda4K6smTFKD+GRV6O48i6Z4iKgPPpw==}
 
-  remark-unwrap-images@4.0.0:
-    resolution: {integrity: sha512-Ilr5ZhrhZSvnjemy1rRuxlTC0I/39YyWDRiE9d5vF079APcwdYYzwcZL8RGehlCtQCiik8hWMyo4Xhz2Fq0JhA==}
+  remark-unwrap-images@4.0.1:
+    resolution: {integrity: sha512-J9HibCHx0/X7ovgqaFe0otizCHpbb1s6Jh3IeiD5ibQm2Oz/OhCDXSKMEW5T54iBw5CxuqRL6BrYp+jLLdqBOw==}
 
   request-light@0.7.0:
     resolution: {integrity: sha512-lMbBMrDoxgsyO+yB3sDcrDuX85yYt7sS8BfQd11jtbW/z5ZWgLZRcEGLsLoYw7I0WSUGQBs8CC8ScIxkTX1+6Q==}
@@ -3795,6 +3802,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup@4.18.1:
@@ -5393,7 +5401,7 @@ snapshots:
 
   '@types/hast@3.0.4':
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
 
   '@types/json-schema@7.0.15': {}
 
@@ -5401,7 +5409,7 @@ snapshots:
 
   '@types/mdast@3.0.15':
     dependencies:
-      '@types/unist': 2.0.10
+      '@types/unist': 2.0.11
 
   '@types/mdast@4.0.0':
     dependencies:
@@ -5409,7 +5417,7 @@ snapshots:
 
   '@types/mdast@4.0.4':
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
 
   '@types/mdx@2.0.13': {}
 
@@ -5417,7 +5425,7 @@ snapshots:
 
   '@types/nlcst@2.0.3':
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
 
   '@types/node@17.0.45': {}
 
@@ -5443,11 +5451,13 @@ snapshots:
       '@types/node': 20.11.17
       minipass: 4.2.8
 
-  '@types/unist@2.0.10': {}
+  '@types/unist@2.0.11': {}
 
   '@types/unist@3.0.0': {}
 
   '@types/unist@3.0.2': {}
+
+  '@types/unist@3.0.3': {}
 
   '@types/yauzl@2.10.3':
     dependencies:
@@ -6573,7 +6583,7 @@ snapshots:
       debug: 4.3.4
       enhanced-resolve: 5.15.0
       eslint: 8.57.0
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       fast-glob: 3.3.1
       get-tsconfig: 4.7.2
@@ -6585,7 +6595,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6631,7 +6641,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.5.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -7119,7 +7129,7 @@ snapshots:
   hast-util-from-parse5@8.0.1:
     dependencies:
       '@types/hast': 3.0.4
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       devlop: 1.1.0
       hastscript: 8.0.0
       property-information: 6.5.0
@@ -7142,7 +7152,7 @@ snapshots:
   hast-util-raw@9.0.4:
     dependencies:
       '@types/hast': 3.0.4
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       '@ungap/structured-clone': 1.2.0
       hast-util-from-parse5: 8.0.1
       hast-util-to-parse5: 8.0.0
@@ -7158,7 +7168,7 @@ snapshots:
   hast-util-select@6.0.2:
     dependencies:
       '@types/hast': 3.0.4
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       bcp-47-match: 2.0.3
       comma-separated-tokens: 2.0.3
       css-selector-parser: 3.0.5
@@ -7214,7 +7224,7 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.5
       '@types/hast': 3.0.4
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       comma-separated-tokens: 2.0.3
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
@@ -7247,13 +7257,13 @@ snapshots:
   hast-util-to-text@4.0.2:
     dependencies:
       '@types/hast': 3.0.4
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       hast-util-is-element: 3.0.0
       unist-util-find-after: 5.0.0
 
   hast-util-whitespace@3.0.0:
     dependencies:
-      '@types/hast': 3.0.1
+      '@types/hast': 3.0.4
 
   hastscript@8.0.0:
     dependencies:
@@ -7640,7 +7650,7 @@ snapshots:
   mdast-util-definitions@6.0.0:
     dependencies:
       '@types/mdast': 4.0.4
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       unist-util-visit: 5.0.0
 
   mdast-util-find-and-replace@3.0.1:
@@ -7663,7 +7673,7 @@ snapshots:
   mdast-util-from-markdown@2.0.1:
     dependencies:
       '@types/mdast': 4.0.4
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       decode-named-character-reference: 1.0.2
       devlop: 1.1.0
       mdast-util-to-string: 4.0.0
@@ -7750,7 +7760,7 @@ snapshots:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       ccount: 2.0.1
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.1
@@ -7804,7 +7814,7 @@ snapshots:
   mdast-util-to-markdown@2.1.0:
     dependencies:
       '@types/mdast': 4.0.4
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       longest-streak: 3.1.0
       mdast-util-phrasing: 4.1.0
       mdast-util-to-string: 4.0.0
@@ -8034,7 +8044,7 @@ snapshots:
     dependencies:
       '@types/acorn': 4.0.6
       '@types/estree': 1.0.5
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       devlop: 1.1.0
       estree-util-visit: 2.0.0
       micromark-util-symbol: 2.0.0
@@ -8345,7 +8355,7 @@ snapshots:
 
   parse-entities@4.0.1:
     dependencies:
-      '@types/unist': 2.0.10
+      '@types/unist': 2.0.11
       character-entities: 2.0.2
       character-entities-legacy: 3.0.0
       character-reference-invalid: 2.0.1
@@ -8357,7 +8367,7 @@ snapshots:
   parse-latin@7.0.0:
     dependencies:
       '@types/nlcst': 2.0.3
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       nlcst-to-string: 4.0.0
       unist-util-modify-children: 4.0.0
       unist-util-visit-children: 3.0.0
@@ -8795,9 +8805,9 @@ snapshots:
       mdast-util-to-markdown: 2.1.0
       unified: 11.0.5
 
-  remark-unwrap-images@4.0.0:
+  remark-unwrap-images@4.0.1:
     dependencies:
-      '@types/mdast': 4.0.0
+      '@types/mdast': 4.0.4
       hast-util-whitespace: 3.0.0
       unist-util-visit: 5.0.0
 
@@ -9315,7 +9325,7 @@ snapshots:
 
   unified@11.0.5:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       bail: 2.0.2
       devlop: 1.1.0
       extend: 3.0.2
@@ -9325,51 +9335,51 @@ snapshots:
 
   unist-util-find-after@5.0.0:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       unist-util-is: 6.0.0
 
   unist-util-is@6.0.0:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
 
   unist-util-modify-children@4.0.0:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       array-iterate: 2.0.1
 
   unist-util-position-from-estree@2.0.0:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
 
   unist-util-position@5.0.0:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
 
   unist-util-remove-position@5.0.0:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       unist-util-visit: 5.0.0
 
   unist-util-stringify-position@2.0.3:
     dependencies:
-      '@types/unist': 2.0.10
+      '@types/unist': 2.0.11
 
   unist-util-stringify-position@4.0.0:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
 
   unist-util-visit-children@3.0.0:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
 
   unist-util-visit-parents@6.0.1:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       unist-util-is: 6.0.0
 
   unist-util-visit@5.0.0:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       unist-util-is: 6.0.0
       unist-util-visit-parents: 6.0.1
 
@@ -9395,12 +9405,12 @@ snapshots:
 
   vfile-location@5.0.3:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       vfile: 6.0.2
 
   vfile-message@4.0.2:
     dependencies:
-      '@types/unist': 3.0.2
+      '@types/unist': 3.0.3
       unist-util-stringify-position: 4.0.0
 
   vfile@6.0.2:
